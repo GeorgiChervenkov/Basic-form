@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Creating my own form </title>
+    <style>
+        body {background-color: silver; 
+            margin: 0;
+            padding: 0;
+            display: flex; 
+            align-items: center; 
+            justify-content:center;
+            height: 90vh;    }
+        
+        .container{width:500px; background-color: aqua; box-shadow: 0 2px 4px ;
+            border-radius: 14px;
+            padding: 40px;
+            padding-top: 10px;
+            
+        }
+        label{font-weight: bold; color: red; width: 50px;   }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"]
+        {width: 90%;
+        background-color: greenyellow;
+        border-radius: 3px;
+        }
+         
+            
+        h3 {text-align: center;}
+        
+        button {background-color: purple;}
+        button:hover {background-color: darkblue;}
+
+        #parent {width: 200px; height: 20vw; background-color: green;}
+        #child {background-color: blue; width: 100px; height: 50%; margin: 5vw auto;}
+        
+    </style>
+    
+</head>
+
+<body>
+<div class="container">
+    
+        <h3>Form</h3>
+        <label for="name">Username</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <button type="submit">Register</button>
+    
+</div>
+<div id="parent">
+<div id = "child">Words</div>
+</div>
+
+</body>
+</html>
